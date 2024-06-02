@@ -43,7 +43,7 @@ public class MyClock extends JFrame{
 		
 		NPCThread nt1 = new NPCThread(npc1);
 		nt1.start();//npc1
-
+//
 		NPCThread nt2 = new NPCThread(npc2);
 		nt2.start();//npc2
 		
