@@ -18,8 +18,9 @@ public class Main4 {
 }
 
 //customized Exception
-//1.define your own exception class, extends Exception,make it as an compile exception
-// ???????????????
+//1.define your own exception class, 
+//a.extends Exception,make it as an compile exception
+//b.extends RuntimeException, then when we throw this exception object, it wouldn't cause compile error
 //2.throw the exception object at the place you want 
 // throw new XxxxException();
 class StudentException extends Exception{
@@ -54,7 +55,7 @@ class Student{
 	public String getGender() {
 		return gender;
 	}
-	public void setGender(String gender) throws StudentException {
+	public void setGender(String gender) throws StudentException  {
 		if(gender.equals("male") || gender.equals("female")) {
 			this.gender = gender;
 		}else {
