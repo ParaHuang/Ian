@@ -28,7 +28,7 @@ public class Main2 {
 			*/
 			
 			//2.read the content into byte array,read how much depends by the size of byte array
-			byte[] b = new byte[(int) f.length()];
+			byte[] b = new byte[(int) f.length()];	
 			in.read(b);
 			String msg = new String(b);
 			System.out.println(msg);
