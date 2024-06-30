@@ -1,7 +1,6 @@
 package day20;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -24,6 +23,10 @@ public class Main3 {
 			out.close();
 			in.close();
 			//whoever create earlier, close later
+			
+			
+			//copy:read + write
+			//cut:read + write + delete original file
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
