@@ -12,8 +12,8 @@ public class Main1 {
 		.	match every single character as long as it's not new line	
 		[ui8q]	match u or i or 8 or q	
 		[A-M]	match 1 letter in the range A to M
-		[A-MU-Z4-8]	match 1 letter in the range A to M or U to Z or 4 to 8
-		[^range] match 1 letter which is not in that range
+		[A-MU-Z4-8]	match 1 character in the range A to M or U to Z or 4 to 8
+		[^range] match 1 character which is not in that range
 		*/
 		
 		
@@ -32,6 +32,8 @@ public class Main1 {
 		
 		//other rule
 		//choose:			|
+		//capture and Select Invert ： 
+		//ignore case : (?i)
 		
 		
 		
@@ -73,7 +75,7 @@ public class Main1 {
 			System.out.println(email + " is not valid");
 		}
 
-		
+		System.out.println( Integer.MIN_VALUE);
 		
 		
 		//2.Matcher object
